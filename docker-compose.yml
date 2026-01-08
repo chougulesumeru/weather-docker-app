@@ -1,0 +1,13 @@
+#docker compose allows us to start docker file
+#and redis the database together with one command
+
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/code
+  redis:
+    image: "redis:alpine"

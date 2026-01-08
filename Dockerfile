@@ -1,5 +1,5 @@
 #step 1: - use small pythin base image
-FROM python:3.9-alpine
+FROM python:3.9-slim
 
 #step 2:- set a directory where all commands will run 
 WORKDIR /code
